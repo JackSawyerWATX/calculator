@@ -4,10 +4,12 @@ const rl = require('readline').createInterface({
 });
 
 console.log()
+console.log(" <--------- SIMPLE CALCULATOR ----------> ");
+console.log("|")
 
-rl.question("Enter your first number: ", (number1) => {
-  rl.question("Enter an operator (+, -, *, /): ", (operator) => {
-    rl.question("Enter your second number: ", (number2) => {
+rl.question("| Enter your first number: ", (number1) => {
+  rl.question("| Enter an operator (+, -, *, /): ", (operator) => {
+    rl.question("| Enter your second number: ", (number2) => {
       const a = parseFloat(number1);
       const b = parseFloat(number2);
       let result;
@@ -23,8 +25,9 @@ rl.question("Enter your first number: ", (number1) => {
           break;
       }
 
-      console.log();
-      console.log(`Result: ${result}`)
+      console.log("|   =");
+      console.log(`|   Result: ${result}`)
+      console.log("-----------------------------------------");
       console.log();
       rl.close();
     })
